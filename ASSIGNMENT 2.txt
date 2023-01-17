@@ -1,0 +1,207 @@
+Assignment: 2 Operators in C Language
+C, C++ and DSA in depth with Job Assistance in Hindi
+
+1. Write a program to print unit digit of a given number
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int num,s;
+    printf("enter the number");
+    scanf("%d",&num);
+    s=num%10;
+    printf("%d is the unit digit ",s);
+    return 0;
+}
+
+
+
+2. Write a program to print a given number without its last digit.
+ANS.
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+
+int a;
+printf("enter a digit");
+scanf("%d",&a);
+a=a/10;
+printf("%d",a);
+return 0;
+
+}
+
+
+3. Write a program to swap values of two int variables
+
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int a, b, c;
+    printf("enter value for swaping");
+    scanf("%d %d",&a,&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("a=%d b=%d",a,b);
+
+
+}
+
+4. Write a program to swap values of two int variables without using a third variable.
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter number for swaping");
+    scanf("%d%d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("a=%d b=%d",a,b);
+    return 0;
+}
+
+
+5. Write a program to input a three digit number and display the sum of the digits.
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+int x,y,z;
+printf("enter three digit for sum");
+scanf("%d%d%d",&x,&y,&z);
+x=x+y+z;
+printf("%d",x);
+return 0;
+}
+
+6. Write a program which takes a character as an input and displays its ASCII code.
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    char x;
+    printf("enter a number for ascii code");
+    scanf("%c",&x);
+    printf("%d",x);
+    return 0;
+}
+
+7. Write a program to check whether the given number is even or odd using a bitwise
+operator.
+
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("enter a number ");
+    scanf("%d",&x);
+    (x&1)?printf("odd"):printf("even");
+    return 0;
+
+}
+8. Write a program to print size of an int, a float, a char and a double type variable
+
+
+
+
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int x;
+    char y=printf("size of char y is %c \n",y);
+    float a;
+    double b;
+    x=sizeof(int);
+    y=sizeof(char);
+    a=sizeof(float);
+    b=sizeof(double);
+    printf("size of int x is %d \n",x);
+    printf("size of char y is %d \n",y);
+    printf("size of float a is %f \n",a);
+    printf("size of double b is %lf \n",b);
+return 0;
+}
+
+9. Write a program to make the last digit of a number stored in a variable as zero.
+(Example - if x=2345 then make it x=2340)
+
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("enter a number");
+    scanf("%d",&x);
+    x=x/10;
+    x=x*10;
+    printf("%d",x);
+    return 0;
+
+}
+
+10. Write a program to input a number from the user and also input a digit. Append a
+digit in the number and print the resulting number. (Example - number=234 and
+digit=9 then the resulting number is 2349)
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    printf("enter a number");
+    scanf("%d %d",&x,&y);
+    x=x*10;
+    x=x+y;
+
+    printf("%d",x);
+
+    return 0;
+
+}
+
+
+
+
+11. Assume price of 1 USD is INR 76.23. Write a program to take the amount in INR
+and convert it into USD.
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    float inr, usd=76.23;
+    printf("enter a indian rupees");
+    scanf("%f",&inr);
+    inr=inr/usd;
+
+
+    printf("%f",inr);
+
+    return 0;
+
+}
+
+12. Write a program to take a three digit number from the user and rotate its digits by
+one position towards the right.
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("Enter a number");
+    scanf("%d",&a);
+    b=a%10;
+    b=b*100;
+    c=a/10;
+    d=b+c;
+    printf("%d",d);
+}
+
+
+
+
